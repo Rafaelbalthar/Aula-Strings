@@ -1,0 +1,109 @@
+
+//Ex1.Interpretação
+/*
+let array
+console.log('a. ', array) //a. undefined
+
+array = null
+console.log('b. ', array) //b. null
+
+array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+console.log('c. ', array.length) //c. 11
+
+let i = 0
+console.log('d. ', array[i]) //d. 3
+
+array[i+1] = 19
+console.log('e. ', array) //e. array(11) = [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+const valor = array[i+6]
+console.log('f. ', valor) //f. 9
+*/
+//Ex2.Interpretação
+/*
+const frase = prompt("Digite uma frase")
+
+console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length)
+*/
+// Qual será o valor impresso no console se a entrada do usuário for "Subi num ônibus em Marrocos"?
+//SUBI NUM ÔNIBUS EM MIRROCOS, 27
+
+
+//Ex1.Código
+/*
+const emailDoUsuario = prompt(`Insira o seu email:`)
+const nomeDoUsuario = prompt(`Insira seu nome:`)
+
+console.log(`O e-mail ${emailDoUsuario} foi cadastrado com sucesso. Seja bem-vinda(o), ${nomeDoUsuario}!`)
+*/
+
+//Ex2.Código
+/*
+let comidasFavoritas = ["Pizza", "Hamburger", "Churrasco", "Massa", "Fritas"]
+
+console.log(comidasFavoritas)
+console.log(`Essas são as minhas comidas favoritas: `)
+console.log(comidasFavoritas [0])
+console.log(comidasFavoritas [1])
+console.log(comidasFavoritas [2])
+console.log(comidasFavoritas [3])
+console.log(comidasFavoritas [4])
+
+const comidaUsuario = prompt(`Qual é a sua comida favorita?`)
+comidasFavoritas[1] = comidaUsuario
+console.log(comidasFavoritas)
+*/
+
+//Ex3.Código
+/*
+let listaDeTarefas = []
+let tarefa1 = prompt(`Insira a sua primeira tarefa`)
+let tarefa2 = prompt(`Insira a sua segunda tarefa`)
+let tarefa3 = prompt(`Insira a sua terceira tarefa`)
+
+listaDeTarefas.push(tarefa1, tarefa2, tarefa3)
+console.log(listaDeTarefas)
+
+let realizada = prompt(`Digite o índice da tarefa realizada 0, 1 ou 2.`)
+listaDeTarefas.splice(realizada, 1)
+console.log(listaDeTarefas)
+*/
+
+//Desafio1
+/*
+const array = prompt(`Escreva uma frase:`)
+const message = array.split(' ')
+console.log(array) 
+console.log(message) 
+*/
+
+//Desafio2
+/*
+const frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
+console.log("O indce da palavra Abacaxi é: " + frutas.indexOf("Abacaxi"))
+console.log("Tamanho do array: "+ frutas.length)   
+*/
+
+//Desafio3
+//Faça um programa que receba uma lista de palavras e exiba as palavras que tenham um numero par de caracteres
+/*
+let lista = []
+let lista1 = prompt(`Insira a sua primeira palavra`)
+let lista2 = prompt(`Insira a sua segunda palavra`)
+let lista3 = prompt(`Insira a sua terceira palavra`)
+
+lista.push(lista1, lista2, lista3)
+console.log(lista)
+
+console.log(lista.map(lista => lista.length%2 === 0))
+console.log(lista.filter(lista => lista.length%2 === 0))
+
+*/
+//Desafio4
+//Faça um programa que recebe uma frase e conta o numero de vogais
+/*
+let frase = prompt(`Insira uma frase: `)
+const vogais = "aeiouAEIOU"
+const vogaisNaFrase = [...frase].filter(char => vogais.includes(char)).length
+console.log("O número de vogais na frase é "+ vogaisNaFrase)
+*/
